@@ -29,4 +29,18 @@ we get the implicit form
 (1 + i H \Delta t) \left| \psi \right>^{(n+1)} =  \left| \psi \right>^{(n)}
 ```
 But in these approximation, we lose the normalization of the wave-function.
+
+## Crank–Nicolson Scheme
+
+To combat the issue of loss of normalization, we can take the average of the implicit and explicit forms given above to get
+```math
+\left( 1 + \frac{i\Delta t}{2} H \right) \left| \psi \right>^{(n+1)} = \left( 1 - \frac{i\Delta t}{2} H \right) \left| \psi \right>^{(n)}
+```
+which defines a unitary transformation
+```math
+U(t) = \left( 1 + \frac{i\Delta t}{2} H(t) \right)^{-1} \cdot \left( 1 - \frac{i\Delta t}{2} H(t) \right)
+
+```
+This can then be used to approximate the evolution of the system.
+
 ![Evolution of Wavepacket](Solution.gif)
