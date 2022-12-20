@@ -43,4 +43,12 @@ U(t) = \left( 1 + \frac{i\Delta t}{2} H(t) \right)^{-1} \cdot \left( 1 - \frac{i
 ```
 This can then be used to approximate the evolution of the system.
 
+## Results
+The Crank-Nicolson scheme was implemented in python and the evolution of a gaussian wave-packet in harmonic potential simulated.
 ![Evolution of Wavepacket](Solution.gif)
+
+## Notes
+The python script outputs a series of ordered JPEG images, which were later stitched using ffmpeg.
+```
+ffmpeg -f image2 -framerate 12 -i %03d.jpg Solution.gif
+```
