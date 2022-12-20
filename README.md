@@ -1,7 +1,4 @@
----
-title: Solving Time-Dependent Schrödinger Equations in Python
-author: Mridul Gupta
---- 
+# Solving Time-Dependent Schrödinger Equations in Python
 
 ## Introduction
 
